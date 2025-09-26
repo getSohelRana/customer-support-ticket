@@ -3,7 +3,7 @@ import bgImg from "../../../assets/vector1.png";
 import bgImg2 from "../../../assets/vector2.png";
 
 
-const Banner = () => {
+const Banner = ({progress}) => {
   return (
     <div className='grid grid-cols-1  sm:grid-cols-2 gap-6 mt-10'>
       <div className='rounded-xl'>
@@ -16,7 +16,7 @@ const Banner = () => {
           className="h-[250px] w-full text-white p-4 rounded-xl flex flex-col justify-center items-center"
         >
           <p className="text-3xl font-semibold">In-progress</p>
-          <p className="text-2xl font-bold">0</p>
+          <p className="text-2xl font-bold" >{progress}</p>
         </div>
       </div>
 
@@ -30,7 +30,7 @@ const Banner = () => {
           className="h-[250px] w-full text-white p-4 rounded-xl flex flex-col justify-center items-center"
         >
           <p className="text-3xl font-semibold">Resolved</p>
-          <p className="text-2xl font-bold">0</p>
+          <p className="text-2xl font-bold" >0</p>
         </div>
       </div>
     </div>
