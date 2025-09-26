@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Login issue",
+    "description": "This is a detailed description of the issue: Login issue.",
+    "customer": "Bob Lee",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "2025-09-01 06:24:07"
+  },
+  {
+    "id": 2,
+    "title": "Payment gateway error",
+    "description": "This is a detailed description of the issue: Payment gateway error.",
+    "customer": "Alice Johnson",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "2025-09-16 06:24:07"
+  },
+  {
+    "id": 3,
+    "title": "UI bug on dashboard",
+    "description": "This is a detailed description of the issue: UI bug on dashboard.",
+    "customer": "Maria Garcia",
+    "priority": "Critical",
+    "status": "Closed",
+    "createdAt": "2025-09-12 06:24:07"
+  },
+  {
+    "id": 4,
+    "title": "Email not received",
+    "description": "This is a detailed description of the issue: Email not received.",
+    "customer": "John Doe",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-09-23 06:24:07"
+  },
+  {
+    "id": 5,
+    "title": "App crash on startup",
+    "description": "This is a detailed description of the issue: App crash on startup.",
+    "customer": "Alice Johnson",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-06 06:24:07"
+  },
+  {
+    "id": 6,
+    "title": "Slow loading page",
+    "description": "This is a detailed description of the issue: Slow loading page.",
+    "customer": "Jane Smith",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2025-09-19 09:10:15"
+  },
+  {
+    "id": 7,
+    "title": "Profile update failed",
+    "description": "This is a detailed description of the issue: Profile update failed.",
+    "customer": "Maria Garcia",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-09-08 14:32:55"
+  },
+  {
+    "id": 8,
+    "title": "Data sync issue",
+    "description": "This is a detailed description of the issue: Data sync issue.",
+    "customer": "John Doe",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-09-20 18:44:22"
+  },
+  {
+    "id": 9,
+    "title": "Notification not showing",
+    "description": "This is a detailed description of the issue: Notification not showing.",
+    "customer": "Bob Lee",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-09-10 11:25:48"
+  },
+  {
+    "id": 10,
+    "title": "Password reset problem",
+    "description": "This is a detailed description of the issue: Password reset problem.",
+    "customer": "Jane Smith",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-09-22 07:15:37"
+  }
+]
