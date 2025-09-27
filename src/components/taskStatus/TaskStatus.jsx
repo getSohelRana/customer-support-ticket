@@ -1,9 +1,12 @@
 import React from 'react';
-
-const TaskStatus = () => {
+import SelectedTask from '../SelectedTask/SelectedTask';
+const TaskStatus = ({ task  }) => {
+ 
+    // console.log(task)
     return (
-        <div>
-            
+          <div className="">
+            <h1>{task.title}</h1>
+           
         </div>
     );
 };

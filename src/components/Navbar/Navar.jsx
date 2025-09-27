@@ -2,8 +2,8 @@ import React from 'react';
 
 const Navar = () => {
     return (
-        <div>
-            <div className="navbar bg-white ">
+        <div className='bg-white'>
+            <div className="navbar  container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                     <div tabIndex={0} role="button" className=" -ml-4 -lg:ml-0 btn btn-ghost lg:hidden">

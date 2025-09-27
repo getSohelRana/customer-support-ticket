@@ -1,6 +1,7 @@
 import React  from 'react';
 import calendarIcon from '../../assets/calendar.png';
-const ShowTickets = ({ ticket, setProgress }) => {
+import { toast } from 'react-toastify';
+const ShowTickets = ({ ticket, setProgress , task , setTask }) => {
     // console.log(ticket)
 
     const priorityBg = {
@@ -17,13 +18,15 @@ const ShowTickets = ({ ticket, setProgress }) => {
         "Open" : "bg-green-500",
         "In Progress" : "bg-yellow-500"
     }
-     const handleProgress = () => {
-    setProgress( progress => progress + 1);
-  };
+    const handleProgress = (ticketInfo) => {
+        setProgress( result => result + 1);
+        toast.success('Seleted')
+        setTask([...task , ticketInfo])
+    };
 
     return (
         
-        <div onClick={handleProgress}  className='shadow-sm p-3 rounded-xl bg-gray-50 cursor-pointer'>
+        <div onClick={() => handleProgress(ticket)}  className='shadow-sm p-3 rounded-xl bg-gray-50 cursor-pointer'>
             <div className='flex justify-between items-center'>
                 <div>
                     <h2 className='font-semibold text-[20px]'>{ticket.title}</h2>
