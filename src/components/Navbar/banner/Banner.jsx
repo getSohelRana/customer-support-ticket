@@ -1,36 +1,29 @@
 import React from 'react';
 import bgImg from "../../../assets/vector1.png";
-import bgImg2 from "../../../assets/vector2.png";
 
 
-const Banner = ({progress , resolved}) => {
+
+const Banner = ({ progress }) => {
   return (
-    <div className='grid grid-cols-1  sm:grid-cols-2 gap-6 mt-10 container mx-auto px-2'>
-      <div className='rounded-xl'>
-        <div
-          style={{
-            backgroundImage: `url(${bgImg}),  linear-gradient(to bottom right, #632EE3, #9F62F2)`,
-            backgroundPosition: "left bottom,  right bottom", 
-            backgroundRepeat: "no-repeat",
-          }}
-          className="h-[250px] w-full text-white p-4 rounded-xl flex flex-col justify-center items-center"
-        >
-          <p className="text-3xl font-semibold">In-progress</p>
-          <p className="text-2xl font-bold" >{progress}</p>
+    <div className='container mx-auto px-2 my-10'>
+      <div className='grid grid-cols-1  sm:grid-cols-2 gap-6 container mx-auto '>
+        <div style={{
+          backgroundImage: `url(${bgImg}),linear-gradient(to bottom right, #632EE3, #9F62F2)`,
+          backgroundPosition: "left bottom,  right bottom",
+          backgroundRepeat: "no-repeat",
+        }} className='h-[240px] w-full relative flex  flex-col justify-center items-center gap-4 text-white rounded-xl'>
+          <img src={bgImg} alt="" className='absolute bottom-0 right-0 rotate-y-180' />
+          <h2 className='text-3xl font-semibold'>In Progress</h2>
+          <p className='text-3xl font-semibold'>{progress}</p>
         </div>
-      </div>
-
-      <div className='rounded-xl'>
-        <div
-          style={{
-            backgroundImage: `url(${bgImg}),  linear-gradient(to top right, #54CF68, #00827A), url(${bgImg2})`,
-            backgroundPosition: "left bottom,  right bottom, top right", 
-            backgroundRepeat: "no-repeat",
-          }}
-          className="h-[250px] w-full text-white p-4 rounded-xl flex flex-col justify-center items-center"
-        >
-          <p className="text-3xl font-semibold">Resolved</p>
-          <p className="text-2xl font-bold" >{resolved}</p>
+        <div style={{
+          backgroundImage: `url(${bgImg}),linear-gradient(to top right, #54CF68, #00827A)`,
+          backgroundPosition: "left bottom,  right bottom",
+          backgroundRepeat: "no-repeat",
+        }} className='h-[240px] w-full relative flex  flex-col justify-center items-center gap-4 text-white rounded-xl'>
+          <img src={bgImg} alt="" className='absolute bottom-0 right-0 rotate-y-180' />
+          <h2 className='text-3xl font-semibold'>Resolved</h2>
+          <p className='text-3xl font-semibold'>0</p>
         </div>
       </div>
     </div>
@@ -38,3 +31,4 @@ const Banner = ({progress , resolved}) => {
 };
 
 export default Banner;
+// {progress}

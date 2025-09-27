@@ -28,8 +28,8 @@ function App() {
       <Navar></Navar>
       <Banner progress={progress} resolved={resolved}></Banner>
       <SectionTitle></SectionTitle>
-      <Suspense fallback={<div className="flex justify-center items-center h-screen w-screen fixed top-0 left-0 bg-blue bg-opacity-10 z-50">
-        <span className="loading loading-spinner text-warning"></span>
+      <Suspense fallback={<div className="flex justify-center items-center h-screen w-screen fixed top-0 left-0 bg-white bg-opacity-10 z-50">
+        <span className="w-16 h-16 loading loading-ring text-success"></span>
       </div>}>
         <IssueCard task = {task} setTask = {setTask} ticketPromise={ticketPromise} setProgress={setProgress} ></IssueCard>
       </Suspense>
